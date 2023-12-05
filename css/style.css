@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-general: 'Ubuntu', sans-serif;
+
+  --cl-black: #000;
+  --cl-white: #fff;
+  --cl-button: #F75A68;
+  --bg-input: #06181C;
+  --bg-button: #065E7C;
+  --bg-thead: #092D38;
+  --bg-row-odd: rgba(6, 22, 27, 0.50);
+}
+
+body * {
+  font-size: 1.6rem;
+  font-family: var(--ff-general);
+  color: var(--cl-white);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--cl-black);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  white-space: wrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+.hide {
+  display: none;
+}
+
+#app {
+  width: 112rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8.7rem;
+}
+
+header .input-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+}
+
+header .input-wrapper #user-name {
+  padding: 1.6rem;
+  border-radius: .5rem;
+  border: none;
+  background-color: var(--bg-input);
+  width: 100%;
+}
+
+header .input-wrapper .favoritar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  font-size: 1.4rem;
+  border-radius: .5rem;
+  border: none;
+  background-color: var(--bg-button);
+  padding: 1.2rem 3.2rem;
+  cursor: pointer;
+  transition: filter .2s ease;
+}
+
+header .input-wrapper .favoritar:hover {
+  filter: brightness(1.2)
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead tr {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-thead);
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  border-top: 1px solid #4A808C;
+  border-left: 1px solid #4A808C;
+  border-right: 1px solid #4A808C;
+}
+
+table thead tr th {
+  width: 100%;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+table thead tr th:first-child {
+  text-align: left;
+}
+
+table tbody tr {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+table tbody tr:last-child {
+  overflow: hidden;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--bg-row-odd);
+  border-left: 1px solid #4A808C;
+  border-right: 1px solid #4A808C;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--bg-input);
+  border: 1px solid #4A808C;
+}
+
+table tbody tr td {
+  width: 100%;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+table tbody tr .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile {
+  width: 5.6rem;
+  border-radius: 100%;
+}
+
+table tbody tr .user a {
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+}
+
+table tbody tr .user a span {
+  font-weight: 400;
+}
+
+table tbody tr td .remove {
+  background-color: transparent;
+  border: none;
+  color: var(--cl-button);
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+table tbody tr td .remove:hover {
+  transform: scale(1.1);
+}
+
+.enpty {
+  height: 60rem;
+  border-bottom: 1px solid #4A808C;
+}
+
+.td-enpty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.td-enpty img {
+  width: 13.2rem;
+  height: 12.5rem;
+}
+
+.td-enpty p {
+  font-size: 4rem;
+  color: #4E5455;
+  font-weight: 700;
+}

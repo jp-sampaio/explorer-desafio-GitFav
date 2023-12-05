@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="./assets/Estrela.svg" type="image/x-svg">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script type="module" src="./js/main.js" defer ></script>
+
+  <title>GitFav</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <img src="./assets/Gitfav.svg" alt="Estrela dentro de chaves e uma frase GitFav" class="logo-gitfav" />
+      <div class="input-wrapper">
+        <label for="user-name" class="sr-only">Digite o Github username que quer favoritar</label>
+        <input type="text" id="user-name" placeholder="Digite o Github username que quer favoritar" />
+        <button class="favoritar">
+          <img src="./assets/star.svg" alt="Star" class="btn-star" />
+          Favoritar
+        </button>
+      </div>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Repositories</th>
+          <th>Followers</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- <tr class="hide">
+          <td class="user">
+            <img src="https://github.com/jp-sampaio.png" alt="Username" class="profile" />
+            <a href="https://github.com/jp-sampaio">
+              <p class="name">João Paulo Sampaio</p>
+              <span class="username">jp-sampaio</span>
+            </a>
+          </td>
+          <td class="repositories">54</td>
+          <td class="followers">35435</td>
+          <td>
+            <button class="remove">Remove</button>
+          </td>
+        </tr>
+
+        <tr class="hide">
+          <td class="user">
+            <img src="https://github.com/jp-sampaio.png" alt="Username" class="profile" />
+            <a href="https://github.com/jp-sampaio">
+              <p class="name">João Paulo Sampaio</p>
+              <span class="username">jp-sampaio</span>
+            </a>
+          </td>
+          <td class="repositories">54</td>
+          <td class="followers">35435</td>
+          <td>
+            <button class="remove">Remove</button>
+          </td>
+        </tr>
+
+        <tr class="hide">
+          <td class="user">
+            <img src="https://github.com/jp-sampaio.png" alt="Username" class="profile" />
+            <a href="https://github.com/jp-sampaio">
+              <p class="name">João Paulo Sampaio</p>
+              <span class="username">jp-sampaio</span>
+            </a>
+          </td>
+          <td class="repositories">54</td>
+          <td class="followers">35435</td>
+          <td>
+            <button class="remove">Remove</button>
+          </td>
+        </tr>
+
+        <tr class="hide">
+          <td class="user">
+            <img src="https://github.com/jp-sampaio.png" alt="Username" class="profile" />
+            <a href="https://github.com/jp-sampaio">
+              <p class="name">João Paulo Sampaio</p>
+              <span class="username">jp-sampaio</span>
+            </a>
+          </td>
+          <td class="repositories">54</td>
+          <td class="followers">35435</td>
+          <td>
+            <button class="remove">Remove</button>
+          </td>
+        </tr> -->
+
+        <tr class="enpty">
+          <td class="td-enpty">  
+            <img src="./assets/Estrela.svg" alt="Estrela" />
+            <p>Nenhum favorito ainda</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
