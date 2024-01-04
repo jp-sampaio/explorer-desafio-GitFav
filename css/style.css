@@ -28,7 +28,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  max-height: 100vh;
+  margin-top: 5rem;
   background-color: var(--cl-black);
 }
 
@@ -40,10 +41,6 @@ body {
   overflow: hidden;
   white-space: wrap;
   clip: rect(0, 0, 0, 0);
-}
-
-.hide {
-  display: none;
 }
 
 #app {
@@ -119,6 +116,25 @@ table thead tr th:first-child {
   text-align: left;
 }
 
+table tbody {
+  max-height: 53.5rem;
+  overflow-y: auto;
+  display: block;
+}
+
+table tbody::-webkit-scrollbar {
+  width: .8rem;
+}
+
+table tbody::-webkit-scrollbar-thumb {
+  background-color: var(--bg-button);
+  border-radius: .6rem;
+}
+
+table tbody::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 table tbody tr {
   display: flex;
   align-items: center;
@@ -126,7 +142,6 @@ table tbody tr {
 }
 
 table tbody tr:last-child {
-  overflow: hidden;
   border-bottom-left-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
 }
