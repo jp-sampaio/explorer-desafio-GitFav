@@ -120,6 +120,12 @@ table tbody {
   max-height: 53.5rem;
   overflow-y: auto;
   display: block;
+  border-bottom: 1px solid #4A808C;
+  border-right: 1px solid #4A808C;
+  border-left: 1px solid #4A808C;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  position: relative;
 }
 
 table tbody::-webkit-scrollbar {
@@ -141,20 +147,14 @@ table tbody tr {
   text-align: center;
 }
 
-table tbody tr:last-child {
-  border-bottom-left-radius: 1.2rem;
-  border-bottom-right-radius: 1.2rem;
-}
-
 table tbody tr:nth-child(odd) {
   background-color: var(--bg-row-odd);
-  border-left: 1px solid #4A808C;
-  border-right: 1px solid #4A808C;
 }
 
 table tbody tr:nth-child(even) {
   background-color: var(--bg-input);
-  border: 1px solid #4A808C;
+  border-bottom: 1px solid #4A808C;
+  border-top: 1px solid #4A808C;
 }
 
 table tbody tr td {
@@ -199,12 +199,12 @@ table tbody tr td .remove:hover {
   transform: scale(1.1);
 }
 
-.enpty {
-  height: 60rem;
+.empty {
+  height: 50rem;
   border-bottom: 1px solid #4A808C;
 }
 
-.td-enpty {
+.td-empty {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,7 +216,7 @@ table tbody tr td .remove:hover {
   height: 12.5rem;
 }
 
-.td-enpty p {
+.td-empty p {
   font-size: 4rem;
   color: #4E5455;
   font-weight: 700;

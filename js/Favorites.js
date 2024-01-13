@@ -67,6 +67,8 @@ export class FavoritesView extends Favorites {
   update() {
     this.removeAllTr();
 
+    this.empyt();
+
     this.entries.forEach( user => {
       const row = this.createRow();
 
@@ -86,8 +88,23 @@ export class FavoritesView extends Favorites {
       } 
 
       this.tBody.append(row);
-      console.log(row)
     });
+  }
+
+  empyt() {
+    if(this.entries.length == 0) {
+      const empytRow = document.createElement("tr");
+      empytRow.classList.add("empty");
+
+      empytRow.innerHTML = `
+        <td class="td-enpty">  
+            <img src="./assets/Estrela.svg" alt="Estrela" />
+            <p>Nenhum favorito ainda</p>
+          </td>
+      `;
+
+      this.tBody.append(empytRow);
+    }
   }
 
   createRow() {
